@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="header">
     <div class="wrapper">
@@ -48,17 +50,17 @@
           <ul class="preview__list">
             <li class="preview__item preview__item_active">
               <a class="preview__item-link">
-                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+                <img class="preview__item-image" src="xbox-one.jpg" alt="preview xbox one front">
               </a>
             </li>
             <li class="preview__item">
               <a class="preview__item-link">
-                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+                <img class="preview__item-image" src="xbox-one-back.jpg" alt="preview xbox one back">
               </a>
             </li>
             <li class="preview__item">
               <a class="preview__item-link">
-                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+                <img class="preview__item-image" src="xbox-one-side.jpg" alt="preview xbox one side">
               </a>
             </li>
           </ul>
@@ -88,14 +90,77 @@
               </div>
             </div>
             <form class="product__form">
+              <div class=product__form-radio>
+                <label class="product__form-radio-label">
+                  <input type="radio" name="color"
+                    class="product__form-radio-button radio-button_white" checked>
+                  <span class="product__form-radio-text">White</span>
+                </label>
+                <label class="product__form-radio-label">
+                  <input type="radio" name="color"
+                    class="product__form-radio-button radio-button_black">
+                  <span class="product__form-radio-text">Black</span>
+                </label>
+                <label class="product__form-radio-label">
+                  <input type="radio" name="color"
+                    class="product__form-radio-button radio-button_green">
+                  <span class="product__form-radio-text">Green</span>
+                </label>
+              </div>
+              <select class="dropdown dropdown_big product__form-dropdown">
+                <option selected value="Quantity (1)">Quantity (1)</option>
+                <option value="Quantity (1)">Quantity (2)</option>
+              </select>
               <button class="button button_primary button_big product__form-button">
                 <span class="product__form-button-text">add to cart</span>
               </button>
+              <p class="product__form-text">Free shipping on orders over $30</p>
+              <button class="button button_secondary button_big product__form-button">
+                <span class="product__form-button-text">find in store</span>
+              </button>
+              <p class="product__form-text">Compatible with Xbox One, Xbox One S, and Xbox One X
+                consoles.</p>
             </form>
           </header>
         </div>
       </section>
     </div>
+    <div class="products-wrapper">
+      <section class="products">
+        <h2 class="products__title">Complete Your Experience</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <a href="#" class="products__item-link">
+              <img src="product1.jpg" alt="play charge kit" class="products__item-image">
+              <h1 class="products__item-title">Xbox One Play & Charge Kit</h1>
+            </a>
+            <button class="products__item-button button button_primary">$19.99</button>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__item-link">
+              <img src="product2.jpg" alt="xbox wireless adapter" class="products__item-image">
+              <h1 class="products__item-title">Xbox Wireless Adapter for Windows</h1>
+            </a>
+            <button class="products__item-button button button_primary">$24.99</button>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__item-link">
+              <img src="product3.jpg" alt="xbox media remote" class="products__item-image">
+              <h1 class="products__item-title">Xbox One Media Remote</h1>
+            </a>
+            <button class="products__item-button button button_primary">$24.99</button>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__item-link">
+              <img src="product4.jpg" alt="xbox chatpad" class="products__item-image">
+              <h1 class="products__item-title">Xbox Chatpad</h1>
+            </a>
+            <button class="products__item-button button button_primary">$34.99</button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 </body>
+
 </html>
