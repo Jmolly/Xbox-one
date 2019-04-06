@@ -22,7 +22,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  /* max-width: 1140px; */
+  max-width: 1290px;
+  padding-right: 75px;
 }
 
 .header {
@@ -119,6 +120,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  width: 100%;
 }
 
 .preview {
