@@ -39,7 +39,7 @@ body {
   display: inline-block;
   width: 158px;
   height: 34px;
-  background: url('logo.png') no-repeat 0 0;
+  background: url('../img/logo.png') no-repeat 0 0;
   background-size: cover;
   text-indent: -9999px;
 }
@@ -84,7 +84,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url('search.png') 0 0 no-repeat;
+  background: url('../img/search.png') 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -108,7 +108,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 19px;
-  background: url("basket.png") 0 0 no-repeat;
+  background: url("../img/basket.png") 0 0 no-repeat;
   background-size: cover;
   text-indent: -9999px;
 }
@@ -320,7 +320,7 @@ body {
   position: absolute;
   width: 15px;
   height: 14px;
-  background: url('basket-white.png') no-repeat 0 0;
+  background: url('../img/basket-white.png') no-repeat 0 0;
   background-size: cover;
   left: 0;
   transform: translateX(calc(-100% - 13px));
