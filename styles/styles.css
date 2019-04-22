@@ -113,12 +113,15 @@ body {
   text-indent: -9999px;
 }
 
-.content {}
+.content {
+
+}
 
 .product {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  margin-bottom: 85px;
   width: 100%;
 }
 
@@ -129,7 +132,7 @@ body {
 
 .preview__list {
   position: absolute;
-  left: -75px;
+  transform: translateX(-100%);
   list-style: none;
 }
 
@@ -334,67 +337,76 @@ body {
 
 
 
-.product__form-radio {
+.radio-buttons {
   display: flex;
 }
 
-.product__form-radio-label {
+.radio-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 23px;
+  width: 28px;
 }
 
-.product__form-radio-label:last-child {
+.radio-buttons__button {
+  margin-right: 13px;
+}
+
+.radio-buttons__button:last-child {
   margin-right: 0;
 }
 
-.product__form-radio-button {
+.radio-button__input {
+  position: relative;
+}
+
+.radio-input {
   height: 19px;
   width: 19px;
   -webkit-appearance: none;
   display: inline-block;
-  position: relative;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
 
-.radio-button_white {
+.radio-input_white {
   background-color: #ffffff;
   border: solid 2px #e7e7e7;
 }
 
-.radio-button_black {
+.radio-input_black {
   background-color: #000000;
   border: solid 2px #000000;
 }
 
-.radio-button_green {
+.radio-input_green {
   background-color: #7ca251;
   border: solid 2px #7ca251;
 }
 
-.product__form-radio-button:checked::before {
+.radio-button__input:checked::before {
   position: absolute;
-  left: -6.5px;
-  top: -6.5px;
+  left: -6px;
+  top: -6px;
   border: solid 1px #2b2b2b;
-  width: 26px;
-  height: 26px;
-  z-index: -1;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   content: '';
 }
 
-.product__form-radio-button:checked+span {
+.radio-button__input:checked+span {
   display: initial;
 }
 
-.product__form-radio-text {
+.radio-text {
   font-size: 12px;
   line-height: 1.33;
   display: none;
+}
+
+.radio-button__text {
   margin-top: 8px;
 }
 
@@ -402,15 +414,14 @@ body {
   display: flex;
   justify-content: center;
   background-color: #f8f8f8;
-  margin-top: 85px;
+  padding-top: 73px;
+  padding-bottom: 130px;
 }
 
 .products {
   display: flex;
   flex-direction: column;
   max-width: 1140px;
-  padding-top: 73px;
-  padding-bottom: 130px;
 }
 
 .products__title {
@@ -458,7 +469,6 @@ body {
 
 .products__item-title {
   width: 204px;
-  height: 44px;
   text-align: center;
   margin: 0 auto;
   font-size: 16px;
@@ -470,4 +480,5 @@ body {
 .products__item-button {
   width: 207px;
   height: 40px;
+  margin-top: auto;
 }
