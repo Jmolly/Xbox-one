@@ -46,6 +46,10 @@ body {
 
 .menu-label {
   display: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .menu-input {
@@ -543,6 +547,11 @@ body {
     transform: translateX(-50%);
   }
 
+  .search__icon {
+    width: 20px;
+    height: 20px;
+  }
+
   .wrapper {
     max-width: calc(100% - 30px);
     justify-content: space-between;
@@ -602,6 +611,14 @@ body {
 }
 
 @media(max-width: 640px) {
+  .header {
+    padding: 11px 0;
+  }
+
+  .logo {
+    width: 122px;
+    height: 26px;
+  }
 
   .content-wrapper {
     max-width: calc(100% - 30px);
@@ -611,6 +628,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 42px;
   }
 
   .preview {
