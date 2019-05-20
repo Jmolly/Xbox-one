@@ -28,7 +28,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 19px 0;
+  padding: 20px 10px;
 }
 
 .header__nav {
@@ -63,7 +63,6 @@ body {
 
 .nav-list__item {
   margin-left: 60px;
-  /* 100px */
 }
 
 .nav-list__item:first-child {
@@ -81,7 +80,7 @@ body {
 .header__aside {
   display: flex;
   align-items: center;
-  margin-left: 134px;
+  margin-left: auto;
 }
 
 .search {
@@ -133,6 +132,7 @@ body {
   justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 85px;
+  padding: 0 15px;
   width: 100%;
 }
 
