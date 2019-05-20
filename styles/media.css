@@ -34,6 +34,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .search__icon {
     width: 20px;
     height: 20px;
@@ -54,6 +55,14 @@
   .header__search:focus {
     transition: 3s;
     width: 550px;
+  }
+
+  .products__item:last-child {
+    margin-right: 30px;
+  }
+
+  .products__item {
+    margin-bottom: 20px;
   }
 }
 
